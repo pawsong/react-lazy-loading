@@ -1,0 +1,29 @@
+{
+  "name": "react-lazy-loading",
+  "version": "0.1.0",
+  "description": "React HoC for lazy loading",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "scripts": {
+    "clean": "rimraf lib",
+    "lint": "tslint -c tslint.json \"src/**/*.ts\"",
+    "build": "tsc",
+    "prepublish": "npm run clean && npm run build"
+  },
+  "author": "Giff Song <giff.song@gmail.com>",
+  "license": "MIT",
+  "repository": "pawsong/react-lazy-loading",
+  "files": [
+    "src",
+    "lib"
+  ],
+  "dependencies": {
+    "hoist-non-react-statics": "^1.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^15.0.11",
+    "rimraf": "^2.6.0",
+    "tslint": "^4.4.2",
+    "typescript": "^2.1.6"
+  }
+}
